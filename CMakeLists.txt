@@ -7,6 +7,7 @@ project(pymor_dealii)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
+SET(DEAL_II_DIR $ENV{HOME}/.local/bin/dealii)
 FIND_PACKAGE(deal.II 9.2
   HINTS ${deal.II_DIR} ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
   )
